@@ -5,13 +5,8 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public GameObject player;
-    void Start()
+    void FixedUpdate()
     {
-        
-    }
-
-    void Update()
-    {
-        this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 2, -7);
+        transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 2, -7);
     }
 }
